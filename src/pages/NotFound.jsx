@@ -2,7 +2,7 @@ import diagonalArrow from "@/assets/arrow.svg";
 
 function NotFound() {
   return (
-    <div className="bg-not-found-bg w-full h-screen bg-cover text-paragraph-tertiary leading-loose flex flex-col items-center justify-center gap-4">
+    <div className="bg-not-found-bg w-full h-screen bg-cover text-paragraph-tertiary leading-loose flex flex-col items-center justify-center gap-4 col-start-1 -col-end-1">
       <div className="flex flex-col items-center justify-center font-semibold">
         <p className="text-8xl lg:text-8xl mr-20">404</p>
         <p className="text-8xl ml-20">Error</p>

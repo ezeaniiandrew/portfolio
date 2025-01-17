@@ -10,16 +10,17 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   width: 100vw;
-  min-height: 100vh;
+  min-height: 200vh;
   background-color: #0c0e0e;
+  overflow-x: hidden;
 }
 
 #root {
   width: 100%;
   max-width: 1440px;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
