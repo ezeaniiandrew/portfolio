@@ -43,7 +43,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="fixed md:mt-2 md:grid md:grid-cols-12 w-full h-screen md:h-auto">
+    <div className="fixed md:mt-2 md:grid md:grid-cols-12 w-full h-screen md:h-auto z-50">
       <div className="fixed top-2 w-[100vw] z-20 grid grid-cols-12 md:rounded-none md:hidden">
         <motion.div
           initial={{ backgroundColor: "transparent", width: "100%" }}
