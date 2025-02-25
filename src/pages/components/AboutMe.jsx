@@ -20,8 +20,8 @@ function AboutMe() {
             <img src={aboutMeImg} alt="" width={570} height={680} />
           </div>
         </div>
-        <div className="text-left md:mt-20 flex flex-col justify-between w-[40%]">
-          <h2 className="uppercase text-2xl font-[500]">about me</h2>
+        <div className="text-left md:mt-20 flex flex-col gap-5 md:gap-0 justify-between md:w-[40%]">
+          <h2 className="uppercase text-3xl font-semibold">about me</h2>
           <RiCheckboxBlankCircleFill width={8} height={8} color="#707070" />
           <p>I am Andrew Ezeani.</p>
           <RiCheckboxBlankCircleFill width={8} height={8} color="#707070" />

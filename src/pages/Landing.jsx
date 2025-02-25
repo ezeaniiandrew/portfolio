@@ -1,10 +1,12 @@
-import { AboutMe, Hero } from "./components";
+import { AboutMe, ExploreProjects, Hero, Skills } from "./components";
 
 function Landing() {
   return (
     <>
       <Hero />
       <AboutMe />
+      <Skills />
+      <ExploreProjects />
     </>
   );
 }
