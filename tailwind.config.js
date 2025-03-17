@@ -15,7 +15,11 @@ export default {
         "brand-tertiary-light": "#BDD9D8",
         "paragraph-tertiary": "#AAB0B1",
         "paragraph-black": "#03141A",
+        "paragraph-tertiary-2": "#566265",
         "nav-bg-black": "#0C0E0E",
+      },
+      fontSize: {
+        3.5: "2rem",
       },
     },
   },
