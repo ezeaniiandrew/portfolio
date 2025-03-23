@@ -1,8 +1,19 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Landing, NotFound } from "../pages";
+import { Landing, NotFound, ProjectsLayout } from "../pages";
+import Layout from "../layout";
 
 const router = createBrowserRouter([
-  { path: "/", element: <Landing /> },
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      { element: <Landing />, index: true },
+      {
+        path: "projects",
+        element: <ProjectsLayout />,
+      },
+    ],
+  },
   {
     path: "*",
     element: <NotFound />,
