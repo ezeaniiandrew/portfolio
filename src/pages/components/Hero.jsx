@@ -1,11 +1,8 @@
 import { FaAsterisk } from "react-icons/fa";
-import { NavBar } from "@/components";
 
 function Hero() {
   return (
-    <section className="px-5 dark:text-brand-tertiary-light col-start-1 -col-end-1 bg-hero-bg-img h-screen bg-cover bg-no-repeat bg-[top_10rem_left_-45rem] md:bg-center grid grid-cols-12 grid-rows-12 relative">
-      <NavBar />
-
+    <section className="px-5 dark:text-brand-tertiary-light col-start-1 -col-end-1 bg-hero-bg-img h-screen bg-cover bg-no-repeat bg-[top_10rem_left_-45rem] md:bg-center grid grid-cols-12 grid-rows-12">
       <section className="md:text-left text-6xl md:text-9xl font-bold dark:text-white capitalize row-start-3 row-end-7 md:row-start-4 md:row-end-11 col-start-1 md:col-start-2 md:px-0 -col-end-1 md:col-end-8 mt-4 md:mt-0">
         <h1>
           Frontend <span>developer</span>
