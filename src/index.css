@@ -19,9 +19,8 @@ body {
 
 #root {
   width: 100%;
+  overflow-x: hidden;
   max-width: 1440px;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  row-gap: 80px;
+  position: relative;
 }
