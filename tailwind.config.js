@@ -17,6 +17,7 @@ export default {
         "paragraph-black": "#03141A",
         "paragraph-tertiary-2": "#566265",
         "nav-bg-black": "#0C0E0E",
+        "heading-1": "#EDFFDF",
       },
       fontSize: {
         3.5: "2rem",
