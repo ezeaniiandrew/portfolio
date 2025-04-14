@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Landing, NotFound, Projects } from "../pages";
+import { Contact, Landing, NotFound, Projects } from "../pages";
 import Layout from "../layout";
 import { ProjectDetail } from "../pages/components";
 
@@ -17,11 +17,15 @@ const router = createBrowserRouter([
         path: "/projects/:projectId",
         element: <ProjectDetail />,
       },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
     ],
-  },
-  {
-    path: "*",
-    element: <NotFound />,
   },
 ]);
 
