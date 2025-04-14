@@ -18,6 +18,7 @@ export default {
         "paragraph-tertiary-2": "#566265",
         "nav-bg-black": "#0C0E0E",
         "heading-1": "#EDFFDF",
+        "contact-bg": "#191919",
       },
       fontSize: {
         3.5: "2rem",
