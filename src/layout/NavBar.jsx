@@ -3,8 +3,8 @@ import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 import { socialLinks } from "../data";
+import { useScroll, useTransform } from "framer-motion";
 
 const navLinks = [
   { name: "About", path: "/about" },
@@ -15,36 +15,28 @@ const navLinks = [
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const { scrollYProgress } = useScroll();
+  const width = useTransform(scrollYProgress, [0, 0.1], ["100%", "90%"]);
+  const borderRadius = useTransform(
+    scrollYProgress,
+    [0, 0.1],
+    ["0px", "9999px"]
+  );
+  const marginInline = useTransform(scrollYProgress, [0, 0.1], ["0", "auto"]);
 
   return (
     <div className="fixed text-white md:mt-2 md:grid md:grid-cols-12 w-full h-screen md:h-auto z-50">
       <div className="fixed top-2 w-[100vw] z-20 grid grid-cols-12 md:rounded-none md:hidden">
         <motion.div
-          initial={{ backgroundColor: "transparent", width: "100%" }}
-          animate={{
-            backgroundColor: isScrolled && !isOpen ? "black" : "transparent",
-            width: isScrolled || isOpen ? "90%" : "100%",
-            marginInline: isScrolled && "auto",
+          style={{
+            width,
+            marginInline,
+            borderRadius,
+            top,
           }}
-          transition={{ duration: 0.3 }}
-          className="flex justify-between items-center col-start-1 -col-end-1 py-6 px-5 rounded-full "
+          className="flex backdrop-blur-md justify-between items-center col-start-1 -col-end-1 py-6 px-5"
         >
           <NavLink to="/" className="text-4xl md:text-2xl md:hidden">
             AIE
