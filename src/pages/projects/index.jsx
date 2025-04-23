@@ -8,7 +8,7 @@ function Projects() {
         className="w-full h-[100dvh] grid place-content-center pb-32 pt-32 relative overflow-hidden"
       >
         <div className="relative z-10">
-          <h2 className="text-6xl md:text-7xl font-bold dark:text-white capitalize leading-loose">
+          <h2 className="text-6xl md:text-7xl font-bold dark:text-white capitalize leading-tight md:leading-snug lg:leading-loose">
             my work, my pride.
           </h2>
           <p className="text-lg md:text-xl font-semibold mt-4 mx-auto max-w-2xl">
