@@ -1,5 +1,6 @@
 import star from "../../assets/star.svg";
-import aboutMeImg from "../../assets/about-me-img.png";
+// import aboutMeImg from "../../assets/about-me-img.png";
+import aboutMeImg from "../../assets/dp.png";
 import { RiCheckboxBlankCircleFill } from "react-icons/ri";
 
 function AboutMe() {
@@ -26,16 +27,23 @@ function AboutMe() {
           <p>I am Andrew Ezeani.</p>
           <RiCheckboxBlankCircleFill width={8} height={8} color="#707070" />
           <p>
-            A creative frontend developer focusing on React.js. Proficiency in
-            HTML, CSS, JavaScript, and front-end frameworks.
+            A frontend engineer with 3+ years of experience building responsive,
+            user-focused web interfaces.
           </p>
           <RiCheckboxBlankCircleFill width={8} height={8} color="#707070" />
-          <p>I have been working with web technologies for 3 plus years.</p>
+          <p>
+            I help businesses bring their ideas to life through fast,
+            accessible, and maintainable front-end development. Whether
+            you&apos;re starting from scratch or refining an existing product, I
+            turn complex problems into smooth, scalable solutions. I work best
+            with teams that value thoughtful design, clear communication, and
+            dependable execution.
+          </p>
           <RiCheckboxBlankCircleFill width={8} height={8} color="#707070" />
           <p>
-            During this period, I gained hands-on experience with developing the
-            frontend for web applications, testing, accessibility and source
-            control.
+            If you&apos;re looking for a frontend engineer who&apos;s as
+            invested in your product&apos;s success as you are, I&apos;m your
+            guy — let&apos;s build something great together.
           </p>
         </div>
       </div>
