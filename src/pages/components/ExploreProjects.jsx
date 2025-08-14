@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { projects } from "../../data";
+
 function ExploreProjects() {
   return (
     <section className="col-start-1 md:col-start-2 -col-end-1 md:col-end-12 dark:text-brand-tertiary-light flex flex-col gap-10 items-center justify-center">
@@ -8,18 +11,32 @@ function ExploreProjects() {
         <p className="text-center tracking-[0.4em]">With the things I know</p>
       </div>
       <div className="w-full grid-cols-[repeat(auto-fit,_minmax(min(300px,_100%),_1fr))] grid gap-8 px-5">
-        {Array.from({ length: 6 }, (_, i) => (
-          <article key={i}>
-            <div className="h-[376px] bg-gray-500 rounded-xl"></div>
-            <div className="flex justify-between items-center text-paragraph-tertiary mt-2">
-              <h3 className="text-xl leading-8 capitalize">project one</h3>
-              <button
-                type="button"
-                className="uppercase text-xs leading-3 p-[10px] border rounded-[100px] border-paragraph-tertiary"
-              >
-                view details
-              </button>
-            </div>
+        {projects.map((project) => (
+          <article
+            key={project.name}
+            className="bg-white rounded-2xl overflow-hidden shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_30px_rgb(254,178,115,0.4)]"
+          >
+            <Link
+              to={`/projects/${project.name.toLowerCase()}`}
+              className="block group"
+            >
+              <div className="overflow-hidden bg-brand-tertiary-light">
+                <img
+                  src={project.coverImageTop}
+                  alt={project.name}
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+
+              <div className="p-4 flex justify-between items-center">
+                <h3 className="text-lg font-semibold capitalize text-paragraph-black group-hover:text-brand-secondary transition-colors duration-300">
+                  {project.name}
+                </h3>
+                <span className="text-xs px-4 py-1 bg-paragraph-black text-heading-1 border border-brand-secondary rounded-full capitalize transition-all duration-300 group-hover:bg-brand-secondary group-hover:text-white">
+                  view details
+                </span>
+              </div>
+            </Link>
           </article>
         ))}
       </div>
