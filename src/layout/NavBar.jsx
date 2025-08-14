@@ -7,9 +7,8 @@ import { socialLinks } from "../data";
 import { useScroll, useTransform } from "framer-motion";
 
 const navLinks = [
+  { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Services", path: "/services" },
-  { name: "Projects", path: "/projects" },
   { name: "Contact", path: "/contact" },
 ];
 
