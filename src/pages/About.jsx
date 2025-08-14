@@ -1,4 +1,4 @@
-import aboutMeImage from "@/assets/about_me_image_crop.png";
+import aboutMeImage from "@/assets/dp.jpg";
 import { skillSets } from "../data";
 
 function About() {
@@ -26,8 +26,15 @@ function About() {
             user experiences.
           </p>
         </div>
-        <div className="mt-10 -rotate-6 grid place-content-center relative before:content-[''] before:absolute before:w-[320px] before:h-[320px] before:rotate-6 before:left-[50%] before:-translate-x-[46%] before:bg-brand-tertiary-light before:-z-10 before:rounded-full">
-          <img src={aboutMeImage} alt="" />
+        <div className="mt-10 grid place-content-center relative before:content-[''] before:absolute before:w-[320px] before:h-[320px] before:rotate-6 before:left-[50%] before:-translate-x-[46%] before:bg-brand-tertiary-light before:-z-10 before:rounded-full">
+          <img
+            src={aboutMeImage}
+            alt="Portrait of Andrew Ezeani"
+            className="max-w-[280px] md:max-w-[350px] rounded-xl shadow-lg transition-transform duration-500 ease-out hover:scale-105 hover:rotate-1 hover:shadow-[0_12px_40px_rgba(254,178,115,0.4)]"
+            width="350"
+            height="467"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="w-full text-left mt-24">

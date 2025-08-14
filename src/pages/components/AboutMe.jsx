@@ -1,6 +1,5 @@
 import star from "../../assets/star.svg";
-// import aboutMeImg from "../../assets/about-me-img.png";
-import aboutMeImg from "../../assets/dp.png";
+import aboutMeImage from "../../assets/dp.jpg";
 import { RiCheckboxBlankCircleFill } from "react-icons/ri";
 
 function AboutMe() {
@@ -18,7 +17,15 @@ function AboutMe() {
         <div>
           <img src={star} alt="" />
           <div className="-mt-20">
-            <img src={aboutMeImg} alt="" width={570} height={680} />
+            <img
+              src={aboutMeImage}
+              alt="Portrait of Andrew Ezeani"
+              className="max-w-[280px] md:max-w-[350px] rounded-xl shadow-lg transition-transform duration-500 ease-out hover:scale-105 hover:rotate-1 hover:shadow-[0_12px_40px_rgba(254,178,115,0.4)]"
+              width="350"
+              height="467"
+              loading="lazy"
+            />
+            {/* <img src={aboutMeImg} alt="" width={570} height={680} /> */}
           </div>
         </div>
         <div className="text-left md:mt-20 flex flex-col gap-5 md:gap-0 justify-between md:w-[40%]">
