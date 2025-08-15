@@ -1,5 +1,3 @@
-// import NavBar from "../components/NavBar";
-// import Footer from "../layout/Footer";
 import {
   AboutMe,
   ArticlesSection,
@@ -11,13 +9,15 @@ import {
 function Landing() {
   return (
     <>
-      {/* <NavBar /> */}
-      <Hero />
+      <Hero
+        headline="Building Web Experiences That"
+        subText="I create clean, interactive, and performant web applications that make your ideas and business succeed."
+        highlightedText="Deliver Results"
+      />
       <AboutMe />
       <Skills />
       <ExploreProjects />
       <ArticlesSection />
-      {/* <Footer /> */}
     </>
   );
 }

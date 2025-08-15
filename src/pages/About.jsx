@@ -1,67 +1,66 @@
 import aboutMeImage from "@/assets/dp.jpg";
 import { skillSets } from "../data";
+import { Hero } from "./components";
 
 function About() {
   return (
-    <section className="col-start-1 md:col-start-2 -col-end-1 md:col-end-12 dark:text-brand-tertiary-light flex flex-col gap-10 items-center justify-center">
-      <div
-        id="hero"
-        className="w-full h-[100dvh] grid place-content-center pb-32 pt-32 relative overflow-hidden"
-      >
-        <div className="relative z-10">
-          <h2 className="text-6xl md:text-7xl font-bold dark:text-white capitalize leading-loose">
-            About me.
-          </h2>
+    <>
+      <Hero
+        headline="The Person Behind the code"
+        subText="I'm a frontend developer, content writer, and tech educator from Nigeria, passionate about sharing knowledge and building solutions that help businesses grow."
+      />
+      <section className="col-start-1 md:col-start-2 -col-end-1 md:col-end-12 dark:text-brand-tertiary-light flex flex-col gap-10 items-center justify-center">
+        <div className="w-full grid place-content-center">
+          <div className="relative z-10">
+            <p className="text-6xl md:text-7xl font-bold dark:text-white capitalize leading-tight md:leading-snug">
+              My name is{" "}
+              <span className="block text-brand-secondary">
+                Andrew Ezeani.{" "}
+              </span>
+            </p>
+            <p className="text-lg md:text-xl font-semibold mt-4 mx-auto max-w-2xl">
+              I am a frontend Engineer with a 3+ years of experience in creating
+              beautiful and performant web interfaces that provide exceptional
+              user experiences.
+            </p>
+          </div>
+          <div className="mt-10 grid place-content-center relative before:content-[''] before:absolute before:w-[320px] before:h-[320px] before:rotate-6 before:left-[50%] before:-translate-x-[46%] before:bg-brand-tertiary-light before:-z-10 before:rounded-full">
+            <img
+              src={aboutMeImage}
+              alt="Portrait of Andrew Ezeani"
+              className="max-w-[280px] md:max-w-[350px] rounded-xl shadow-lg transition-transform duration-500 ease-out hover:scale-105 hover:rotate-1 hover:shadow-[0_12px_40px_rgba(254,178,115,0.4)]"
+              width="350"
+              height="467"
+              loading="lazy"
+            />
+          </div>
         </div>
-      </div>
-      <div className="w-full grid place-content-center">
-        <div className="relative z-10">
-          <p className="text-6xl md:text-7xl font-bold dark:text-white capitalize leading-tight md:leading-snug">
-            My name is{" "}
-            <span className="block text-brand-secondary">Andrew Ezeani. </span>
-          </p>
-          <p className="text-lg md:text-xl font-semibold mt-4 mx-auto max-w-2xl">
-            I am a frontend Engineer with a 3+ years of experience in creating
-            beautiful and performant web interfaces that provide exceptional
-            user experiences.
-          </p>
+        <div className="w-full text-left mt-24">
+          <h3 className="uppercase border-l-8 border-l-brand-secondary pl-3 font-semibold text-4xl">
+            Experience
+          </h3>
+          <TimelineCurves />
         </div>
-        <div className="mt-10 grid place-content-center relative before:content-[''] before:absolute before:w-[320px] before:h-[320px] before:rotate-6 before:left-[50%] before:-translate-x-[46%] before:bg-brand-tertiary-light before:-z-10 before:rounded-full">
-          <img
-            src={aboutMeImage}
-            alt="Portrait of Andrew Ezeani"
-            className="max-w-[280px] md:max-w-[350px] rounded-xl shadow-lg transition-transform duration-500 ease-out hover:scale-105 hover:rotate-1 hover:shadow-[0_12px_40px_rgba(254,178,115,0.4)]"
-            width="350"
-            height="467"
-            loading="lazy"
-          />
-        </div>
-      </div>
-      <div className="w-full text-left mt-24">
-        <h3 className="uppercase border-l-8 border-l-brand-secondary pl-3 font-semibold text-4xl">
-          Experience
-        </h3>
-        <TimelineCurves />
-      </div>
-      <div className="w-full text-left mt-24">
-        <h3 className="uppercase border-l-8 border-l-brand-secondary pl-3 font-semibold text-4xl">
-          Skills
-        </h3>
-        <div className="mt-10 flex flex-col md:flex-row w-full md:w-auto px-5 md:px-0 md:flex-wrap gap-4 md:justify-center">
-          {skillSets.map((skill, index) => (
-            <div
-              key={index}
-              className="flex items-center p-4 rounded-lg border border-tertiary-light"
-            >
-              <div className="mr-2">
-                <skill.icon color={skill.color} />
+        <div className="w-full text-left mt-24">
+          <h3 className="uppercase border-l-8 border-l-brand-secondary pl-3 font-semibold text-4xl">
+            Skills
+          </h3>
+          <div className="mt-10 flex flex-col md:flex-row w-full md:w-auto px-5 md:px-0 md:flex-wrap gap-4 md:justify-center">
+            {skillSets.map((skill, index) => (
+              <div
+                key={index}
+                className="flex items-center p-4 rounded-lg border border-tertiary-light"
+              >
+                <div className="mr-2">
+                  <skill.icon color={skill.color} />
+                </div>
+                <p>{skill.name}</p>
               </div>
-              <p>{skill.name}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
 
