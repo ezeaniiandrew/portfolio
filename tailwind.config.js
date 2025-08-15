@@ -4,10 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "not-found-bg": "url('./src/assets/not-found-bg.webp')",
-        "noise-bg": "url('./src/assets/noise.webp')",
-        "about-me-img": "url('./src/assets/about-me-img.png')",
-        "hero-bg-img": "url('./src/assets/hero-bg-image.png')",
+        "hero-image": "url('/hero-bg.webp')",
         star: "url('./src/assets/star.svg')",
       },
       colors: {

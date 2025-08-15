@@ -1,6 +1,6 @@
 function Hero({ headline, subText, highlightedText }) {
   return (
-    <section className="px-5 bg-not-found-bg grid place-content-center text-brand-tertiary-light col-start-1 -col-end-1 bg-[#111111] h-screen bg-cover bg-no-repeat md:bg-center">
+    <section className="px-5 bg-hero-image grid place-content-center text-brand-tertiary-light col-start-1 -col-end-1 bg-[#111111] h-screen bg-cover bg-no-repeat md:bg-center">
       <h1 className="text-5xl text-center text-balance md:text-7xl font-bold text-white capitalize leading-tight">
         {headline} {""}
         {highlightedText && (
