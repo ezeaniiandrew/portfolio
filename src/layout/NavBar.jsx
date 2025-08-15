@@ -40,15 +40,15 @@ function NavBar() {
           <NavLink to="/" className="text-4xl md:text-2xl md:hidden">
             AIE
           </NavLink>
-          <div onClick={toggleMenu} className="md:hidden text-4xl">
+          <button onClick={toggleMenu} className="md:hidden text-4xl">
             {!isOpen ? <GiHamburgerMenu /> : <AiOutlineClose />}
-          </div>
+          </button>
         </motion.div>
       </div>
 
       <div
-        className={`flex flex-col gap-20 items-start pt-10 px-10 md:pt-0 md:flex-row md:items-center md:justify-between md:h-20 md:col-start-2 md:col-end-12 h-full bg-nav-bg-black md:p-5 md:rounded-2xl ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
+        className={`flex flex-col gap-20 items-start pt-10 px-6 md:pt-0 md:flex-row md:items-center md:justify-between md:h-20 md:col-start-2 md:col-end-12 h-full bg-black md:bg-transparent md:backdrop-blur-md md:rounded-full ${
+          isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-500 md:transition-none md:translate-x-0`}
       >
         <NavLink to="/" className="text-4xl md:text-2xl hidden md:block">
