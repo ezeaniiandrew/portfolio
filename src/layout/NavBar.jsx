@@ -57,7 +57,11 @@ function NavBar() {
         <nav className="mt-28 md:mt-0">
           <ul className="flex flex-col items-start md:flex-row md:items-center md:justify-center gap-6 md:gap-4 lg:gap-6">
             {navLinks.map((link) => (
-              <li key={link.name} className="text-4xl md:text-base">
+              <li
+                key={link.name}
+                className="text-4xl md:text-base"
+                onClick={() => setIsOpen(false)}
+              >
                 <NavLink to={link.path}>{link.name}</NavLink>
               </li>
             ))}
