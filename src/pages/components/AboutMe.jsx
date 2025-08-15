@@ -13,7 +13,7 @@ function AboutMe() {
         about creating digital experiences that are beautiful, functional, and
         accessible to everyone.&quot;
       </blockquote>
-      <div className="col-span-12 flex flex-col md:flex-row gap-10 mt-5 px-5 md:px-0 justify-around">
+      <div className="col-span-12 flex flex-col items-center md:items-stretch md:flex-row gap-10 mt-5 px-5 md:px-0 justify-around">
         <div>
           <img src={star} alt="" />
           <div className="-mt-20">
@@ -25,7 +25,6 @@ function AboutMe() {
               height="467"
               loading="lazy"
             />
-            {/* <img src={aboutMeImg} alt="" width={570} height={680} /> */}
           </div>
         </div>
         <div className="text-left md:mt-20 flex flex-col gap-5 md:gap-0 justify-between md:w-[40%]">

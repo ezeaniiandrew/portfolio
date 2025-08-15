@@ -24,7 +24,7 @@ function About() {
               user experiences.
             </p>
           </div>
-          <div className="mt-10 grid place-content-center relative before:content-[''] before:absolute before:w-[320px] before:h-[320px] before:rotate-6 before:left-[50%] before:-translate-x-[46%] before:bg-brand-tertiary-light before:-z-10 before:rounded-full">
+          <div className="mt-10 grid place-content-center">
             <img
               src={aboutMeImage}
               alt="Portrait of Andrew Ezeani"
