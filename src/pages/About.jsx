@@ -13,7 +13,7 @@ function About() {
       <section className="col-start-1 md:col-start-2 -col-end-1 md:col-end-12 dark:text-brand-tertiary-light flex flex-col gap-10 items-center justify-center">
         <div className="w-full grid place-content-center">
           <div className="relative z-10">
-            <p className="text-6xl md:text-7xl font-bold dark:text-white capitalize leading-tight md:leading-snug">
+            <p className="text-lg md:text-xl px-5 md:px-0 font-bold dark:text-white capitalize leading-tight md:leading-snug">
               My name is{" "}
               <span className="block text-brand-secondary">
                 Andrew Ezeani.{" "}
@@ -36,17 +36,17 @@ function About() {
             />
           </div>
         </div>
-        <div className="w-full text-left mt-24">
+        <div className="w-full text-left mt-24 px-5 md:px-0">
           <h3 className="uppercase border-l-8 border-l-brand-secondary pl-3 font-semibold text-4xl">
             Experience
           </h3>
           <TimelineCurves />
         </div>
-        <div className="w-full text-left mt-24">
+        <div className="w-full text-left mt-24 px-5 md:px-0">
           <h3 className="uppercase border-l-8 border-l-brand-secondary pl-3 font-semibold text-4xl">
             Skills
           </h3>
-          <div className="mt-10 flex flex-col md:flex-row w-full md:w-auto px-5 md:px-0 md:flex-wrap gap-4 md:justify-center">
+          <div className="mt-10 flex md:flex-row w-full md:w-auto flex-wrap gap-4 justify-center">
             <Badge badges={skillSets} />
           </div>
         </div>

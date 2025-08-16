@@ -12,7 +12,7 @@ function Contact() {
         subText="Whether it’s a fresh idea or a growing project, I’m here to bring it to life with creativity, care, and a focus on delivering real value to your users."
       />
       <section className="col-start-1 md:col-start-2 -col-end-1 md:col-end-12 dark:text-brand-tertiary-light flex flex-col gap-10 items-center justify-center">
-        <div className="text-left px-[30px] py-[40px] w-[min(1110px,_100%)] border-2 border-paragraph-tertiary-2 bg-contact-bg grid grid-cols-[repeat(2,min(310px,100%)_min(680px,100%))] gap-3">
+        <div className="text-left px-[30px] py-[40px] w-[min(1110px,_100%)] border-2 border-paragraph-tertiary-2 bg-contact-bg grid md:grid-cols-[repeat(2,min(310px,100%)_min(680px,100%))] gap-12 md:gap-3">
           <div className="w-[min(28ch,100%)]">
             <h2 className="font-semibold text-2xl text-paragraph-tertiary">
               Get in Touch
@@ -53,8 +53,8 @@ function Contact() {
               ))}
             </div>
           </div>
-          <form className="grid grid-cols-2 gap-y-6 gap-x-4">
-            <div className="col-start-1 col-end-2 border border-paragraph-tertiary-2 rounded-[10px]">
+          <form className="grid md:grid-cols-2 gap-y-6 gap-x-4">
+            <div className="md:col-start-1 md:col-end-2 border border-paragraph-tertiary-2 rounded-[10px]">
               <label className="sr-only" htmlFor="name">
                 Type your name
               </label>
@@ -67,7 +67,7 @@ function Contact() {
                 required
               />
             </div>
-            <div className="col-start-2 col-end-3 border border-paragraph-tertiary-2 rounded-[10px]">
+            <div className="md:col-start-2 md:col-end-3 border border-paragraph-tertiary-2 rounded-[10px]">
               <label className="sr-only" htmlFor="email">
                 Type your email
               </label>
@@ -89,7 +89,7 @@ function Contact() {
                 type="text"
                 id="subject"
                 name="subject"
-                placeholder="What's the subject of your message?"
+                placeholder="Subject"
                 required
               />
             </div>
@@ -105,7 +105,10 @@ function Contact() {
                 required
               ></textarea>
             </div>
-            <Button text={"send"} className="capitalize w-[200px]" />
+            <Button
+              text={"send"}
+              className="capitalize h-11 md:h-auto md:w-[200px]"
+            />
           </form>
         </div>
       </section>

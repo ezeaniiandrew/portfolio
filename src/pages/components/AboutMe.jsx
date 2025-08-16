@@ -8,26 +8,26 @@ function AboutMe() {
       id="about-me"
       className="col-start-1 md:col-start-2 -col-end-1 md:col-end-12 grid grid-cols-12 dark:text-brand-tertiary-light justify-center"
     >
-      <blockquote className="text-sm md:text-lg col-start-1 -col-end-1 md:col-start-3 md:col-end-11">
+      <blockquote className="text-sm md:text-lg col-start-1 -col-end-1 md:col-start-3 md:col-end-11 px-5 md:px-0 text-balance">
         &quot;Building on the web isn&apos;t just about writing code; it&apos;s
         about creating digital experiences that are beautiful, functional, and
         accessible to everyone.&quot;
       </blockquote>
-      <div className="col-span-12 flex flex-col items-center md:items-stretch md:flex-row gap-10 mt-5 px-5 md:px-0 justify-around">
+      <div className="col-span-12 flex flex-col items-center md:flex-row gap-10 mt-5 px-5 md:px-0 justify-around">
         <div>
           <img src={star} alt="" />
           <div className="-mt-20">
             <img
               src={aboutMeImage}
               alt="Portrait of Andrew Ezeani"
-              className="max-w-[280px] md:max-w-[350px] rounded-xl shadow-lg transition-transform duration-500 ease-out hover:scale-105 hover:rotate-1 hover:shadow-[0_12px_40px_rgba(254,178,115,0.4)]"
+              className="rounded-xl shadow-lg transition-transform duration-500 ease-out hover:scale-105 hover:rotate-1 hover:shadow-[0_12px_40px_rgba(254,178,115,0.4)]"
               width="350"
               height="467"
               loading="lazy"
             />
           </div>
         </div>
-        <div className="text-left md:mt-20 flex flex-col gap-5 md:gap-0 justify-between md:w-[40%]">
+        <div className="text-left md:mt-20 flex flex-col gap-5 justify-between md:w-[40%]">
           <h2 className="uppercase text-3xl font-semibold">about me</h2>
           <RiCheckboxBlankCircleFill width={8} height={8} color="#707070" />
           <p>I am Andrew Ezeani.</p>
