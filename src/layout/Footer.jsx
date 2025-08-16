@@ -9,8 +9,10 @@ function Footer() {
           Got a project in mind? <span>Let’s talk</span>
         </h3>
         <Button
-          text="contact me"
+          text="Get in touch"
           className="capitalize h-16 text-base max-sm:w-full"
+          as={"link"}
+          href="mailto:ezeaniiandrew@example.com"
         />
       </section>
       <section className="max-sm:px-5 mt-20 flex flex-col md:flex-row max-sm:gap-4 md:items-center justify-between">
