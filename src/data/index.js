@@ -49,10 +49,10 @@ export const skillSets = [
   { icon: SiFirebase, color: "#FFCA28", name: "Firebase" },
   { icon: SiTypescript, color: "#3178C6", name: "TypeScript" },
   { icon: SiTestinglibrary, color: "#E33332", name: "React Testing Library" },
-  { icon: SiFramer, color: "#0055FF", name: "Framer Motion" },
+  { icon: SiFramer, color: "#0055FF", name: "Motion" },
   { icon: SiTailwindcss, color: "#38B2AC", name: "Tailwind CSS" },
   { icon: SiVite, color: "#646CFF", name: "Vite" },
-  { icon: SiFfmpeg, color: "#FF2D00", name: "FFmpeg.wasm" },
+  { icon: SiFfmpeg, color: "#FF2D00", name: "FFmpeg" },
 ];
 
 export const getSkillsByNames = (namesArray) => {
@@ -124,7 +124,7 @@ export const projects = [
     techStack: [
       "TypeScript",
       "Tailwind CSS",
-      "FFmpeg.wasm",
+      "FFmpeg",
       "IndexedDB",
       "Canvas API",
       "Web APIs",
