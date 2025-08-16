@@ -2,8 +2,9 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
-import { projects } from "../../data";
+import { getSkillsByNames, projects } from "../../data";
 import { CodeBlock, dracula } from "react-code-blocks";
+import Badge from "./Badge";
 
 function ProjectDetail() {
   const { projectName } = useParams();
@@ -34,14 +35,7 @@ function ProjectDetail() {
             Tech Stack
           </h2>
           <div className="flex flex-wrap gap-2">
-            {selectedProject?.techStack?.map((tech, index) => (
-              <span
-                key={index}
-                className="border border-slate-400 px-3 py-1 rounded-full bg-slate-10 text-sm font-medium"
-              >
-                {tech}
-              </span>
-            ))}
+            <Badge badges={getSkillsByNames(selectedProject?.techStack)} />
           </div>
         </div>
         <aside className="text-left md:row-start-3 col-start-1 -col-end-1 grid gap-y-4 md:col-start-10 md:col-end-13 bg-brand-secondary rounded-[10px] p-5 text-paragraph-black grid-cols-6 md:grid-cols-1 md:gap-y-6 gap-x-2">

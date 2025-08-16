@@ -1,6 +1,6 @@
 import aboutMeImage from "@/assets/dp.jpg";
 import { skillSets } from "../data";
-import { Hero } from "./components";
+import { Badge, Hero } from "./components";
 
 function About() {
   return (
@@ -46,17 +46,7 @@ function About() {
             Skills
           </h3>
           <div className="mt-10 flex flex-col md:flex-row w-full md:w-auto px-5 md:px-0 md:flex-wrap gap-4 md:justify-center">
-            {skillSets.map((skill, index) => (
-              <div
-                key={index}
-                className="flex items-center p-4 rounded-lg border border-tertiary-light"
-              >
-                <div className="mr-2">
-                  <skill.icon color={skill.color} />
-                </div>
-                <p>{skill.name}</p>
-              </div>
-            ))}
+            <Badge badges={skillSets} />
           </div>
         </div>
       </section>

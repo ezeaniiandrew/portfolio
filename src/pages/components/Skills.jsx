@@ -1,4 +1,5 @@
 import { skillSets } from "../../data";
+import Badge from "./Badge";
 
 function Skills() {
   return (
@@ -7,18 +8,7 @@ function Skills() {
         Things I know
       </h2>
       <div className="flex w-full md:w-auto items-center justify-center px-5 md:px-0 flex-wrap gap-4 md:justify-center">
-        {skillSets.map((skill, index) => (
-          <div
-            key={index}
-            className="flex items-center px-3 py-1 border border-slate-400 rounded-full text-sm font-medium
-                 transition-all duration-200 ease-out hover:shadow-md hover:-translate-y-1"
-          >
-            <div className="mr-2">
-              <skill.icon color={skill.color} />
-            </div>
-            <p>{skill.name}</p>
-          </div>
-        ))}
+        <Badge badges={skillSets} />
       </div>
     </section>
   );

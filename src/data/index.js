@@ -1,5 +1,5 @@
 import { FaBehance, FaLinkedin } from "react-icons/fa";
-import { SiLinktree } from "react-icons/si";
+import { SiFfmpeg, SiLinktree, SiVite } from "react-icons/si";
 import { VscGithub } from "react-icons/vsc";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaSass } from "react-icons/fa";
 import {
@@ -41,7 +41,7 @@ export const socialLinks = {
 export const skillSets = [
   { icon: FaHtml5, color: "#E34F26", name: "HTML5" },
   { icon: FaCss3Alt, color: "#1572B6", name: "CSS3" },
-  { icon: FaSass, color: "#CC6699", name: "Sass" },
+  { icon: FaSass, color: "#CC6699", name: "SCSS" },
   { icon: FaJs, color: "#F7DF1E", name: "JavaScript" },
   { icon: FaReact, color: "#61DAFB", name: "React" },
   { icon: SiVitest, color: "#6E9F18", name: "Vitest" },
@@ -51,7 +51,18 @@ export const skillSets = [
   { icon: SiTestinglibrary, color: "#E33332", name: "React Testing Library" },
   { icon: SiFramer, color: "#0055FF", name: "Framer Motion" },
   { icon: SiTailwindcss, color: "#38B2AC", name: "Tailwind CSS" },
+  { icon: SiVite, color: "#646CFF", name: "Vite" },
+  { icon: SiFfmpeg, color: "#FF2D00", name: "FFmpeg.wasm" },
 ];
+
+export const getSkillsByNames = (namesArray) => {
+  return namesArray.map((name) => {
+    const skill = skillSets.find(
+      (s) => s.name.toLowerCase() === name.toLowerCase()
+    );
+    return skill || { name, icon: null, color: null };
+  });
+};
 
 export const projects = [
   {
@@ -241,6 +252,6 @@ export const projects = [
     year: 2023,
     liveLink: "https://task-app-iota-five.vercel.app/",
     githubRepo: "https://github.com/ezeaniiandrew/task-app",
-    techStack: ["React", "TypeScript", "Vite", "Tailwind", "framer motion"],
+    techStack: ["React", "TypeScript", "Vite", "Tailwind CSS", "framer motion"],
   },
 ];
