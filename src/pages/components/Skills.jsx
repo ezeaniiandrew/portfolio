@@ -1,5 +1,5 @@
 import { skillSets } from "../../data";
-import Badge from "./Badge";
+import Badge from "@/components";
 
 function Skills() {
   return (

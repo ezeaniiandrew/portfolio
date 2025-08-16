@@ -4,7 +4,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 import { getSkillsByNames, projects } from "../../data";
 import { CodeBlock, dracula } from "react-code-blocks";
-import Badge from "./Badge";
+import Badge from "@/components";
 
 function ProjectDetail() {
   const { projectName } = useParams();

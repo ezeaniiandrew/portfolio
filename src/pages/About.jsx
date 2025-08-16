@@ -1,6 +1,7 @@
 import aboutMeImage from "@/assets/dp.jpg";
 import { skillSets } from "../data";
-import { Badge, Hero } from "./components";
+import { Hero } from "./components";
+import { Badge } from "@/components";
 
 function About() {
   return (
