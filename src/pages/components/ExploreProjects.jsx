@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { projects } from "../../data";
+import { motion } from "framer-motion";
 
 function ExploreProjects() {
   return (
@@ -20,18 +21,24 @@ function ExploreProjects() {
               to={`/projects/${project.name.toLowerCase()}`}
               className="block group"
             >
-              <div className="overflow-hidden bg-brand-tertiary-light">
+              <motion.div
+                layoutId={`image-${project.name}`}
+                className="overflow-hidden bg-brand-tertiary-light"
+              >
                 <img
                   src={project.coverImageTop}
                   alt={project.name}
                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-              </div>
+              </motion.div>
 
               <div className="p-4 flex justify-between items-center">
-                <h3 className="text-lg font-semibold capitalize text-paragraph-black group-hover:text-brand-secondary transition-colors duration-300">
+                <motion.h3
+                  layoutId={`title-${project.name}`}
+                  className="text-lg font-semibold capitalize text-paragraph-black group-hover:text-brand-secondary transition-colors duration-300"
+                >
                   {project.name}
-                </h3>
+                </motion.h3>
                 <span className="text-xs px-4 py-1 bg-paragraph-black text-heading-1 border border-brand-secondary rounded-full capitalize transition-all duration-300 group-hover:bg-brand-secondary group-hover:text-white">
                   view details
                 </span>

@@ -1,10 +1,11 @@
+import PageTransition from "../components/PageTransition";
 import { skillSets } from "../data";
 import { Hero } from "./components";
 import { Badge } from "@/components";
 
 function About() {
   return (
-    <>
+    <PageTransition>
       <Hero
         headline="The Person Behind the code"
         subText="I'm a frontend developer, content writer, and tech educator from Nigeria, passionate about sharing knowledge and building solutions that help businesses grow."
@@ -48,7 +49,7 @@ function About() {
           </div>
         </div>
       </section>
-    </>
+    </PageTransition>
   );
 }
 

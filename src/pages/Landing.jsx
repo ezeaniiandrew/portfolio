@@ -1,3 +1,4 @@
+import PageTransition from "../components/PageTransition";
 import {
   AboutMe,
   ArticlesSection,
@@ -8,7 +9,7 @@ import {
 
 function Landing() {
   return (
-    <>
+    <PageTransition>
       <Hero
         headline="Building Web Experiences That"
         subText="I create clean, interactive, and performant web applications that make your ideas and business succeed."
@@ -18,7 +19,7 @@ function Landing() {
       <Skills />
       <ExploreProjects />
       <ArticlesSection />
-    </>
+    </PageTransition>
   );
 }
 
