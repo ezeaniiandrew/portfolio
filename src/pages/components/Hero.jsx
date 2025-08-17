@@ -7,24 +7,24 @@ function Hero({ headline, subText, highlightedText, showCta }) {
     >
       <div
         className={`gap-6 max-w-[1280px] h-full mx-auto grid place-content-center ${
-          showCta && "pt-14"
+          showCta ? "pt-14" : ""
         }`}
       >
-        <h1 className="text-5xl text-center text-balance md:text-7xl font-bold text-white capitalize leading-tight">
+        <h1 className="text-5xl text-center text-balance md:text-7xl font-bold text-white capitalize leading-none">
           {headline} {""}
           {highlightedText && (
             <span className="text-brand-secondary">{highlightedText}</span>
           )}
         </h1>
         {subText && (
-          <p className="text-2xl md:text-3xl text-center font-light max-w-3xl mx-auto text-balance">
+          <p className="text-2xl px-2 md:px-0 md:text-3xl text-center font-light max-w-3xl mx-auto text-balance">
             {subText}
           </p>
         )}
         {showCta && (
           <Button
             text="Get in touch"
-            className="capitalize mt-8 h-16 text-base md:max-w-80 md:mx-auto"
+            className="capitalize mt-8 h-16 text-base w-[90%] md:max-w-80 mx-auto"
             as={"link"}
             href="mailto:ezeaniiandrew@example.com"
           />

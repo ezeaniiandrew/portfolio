@@ -9,7 +9,7 @@ function AboutMe() {
       className="col-start-1 md:col-start-2 -col-end-1 md:col-end-12 grid grid-cols-12 dark:text-brand-tertiary-light justify-center"
     >
       <div className="col-span-12 grid grid-cols-2 gap-y-12 px-5">
-        <div className="col-span-2 md:col-start-1 md:col-end-2">
+        <div className="col-span-2 md:col-start-1 md:col-end-2 grid place-content-center">
           <img src={star} alt="" />
           <div className="-mt-20">
             <img

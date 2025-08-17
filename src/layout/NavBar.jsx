@@ -46,7 +46,7 @@ function NavBar() {
       </div>
 
       <div
-        className={`flex border border-paragraph-tertiary-2 h-screen flex-col gap-20 items-start pt-10 px-6 md:pt-0 md:flex-row md:items-center md:justify-between md:h-20 md:col-start-2 md:col-end-12 bg-black md:bg-transparent md:backdrop-blur-md md:rounded-full ${
+        className={`flex md:border md:border-paragraph-tertiary-2 h-screen flex-col gap-20 items-start pt-10 px-6 md:pt-0 md:flex-row md:items-center md:justify-between md:h-20 md:col-start-2 md:col-end-12 bg-black md:bg-transparent md:backdrop-blur-md md:rounded-full ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-500 md:transition-none md:translate-x-0`}
       >

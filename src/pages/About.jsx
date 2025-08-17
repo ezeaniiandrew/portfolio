@@ -14,13 +14,13 @@ function About() {
       <section className="col-start-1 md:col-start-2 -col-end-1 md:col-end-12 dark:text-brand-tertiary-light flex flex-col gap-10 items-center justify-center">
         <div className="w-full grid gap-y-10">
           <div className="relative z-10">
-            <p className="text-lg md:text-xl px-5 md:px-0 font-bold dark:text-white leading-tight md:leading-snug">
+            <p className="text-2xl md:text-3xl px-5 md:px-0 font-bold dark:text-white leading-tight md:leading-snug">
               <span>Hi,</span> my name is
               <span className="block text-brand-secondary capitalize">
                 Andrew Ezeani.
               </span>
             </p>
-            <p className="text-lg text-left md:text-xl font-semibold mt-4 mx-auto max-w-2xl">
+            <p className="text-lg text-left md:text-xl font-semibold mt-4 mx-auto max-w-2xl px-5 md:px-0">
               I am a frontend Engineer with 3+ years of experience in creating
               beautiful and performant web applications that provide exceptional
               user experiences.
@@ -34,7 +34,7 @@ function About() {
               loading="eager"
             />
           </div>
-          <div className="text-left">
+          <div className="text-left px-5 md:px-0">
             <p className="text-lg md:text-xl font-semibold mt-4 mx-auto max-w-2xl">
               I enjoy sharing my knowledge by breaking down ideas in a way that
               feels clear and easy to follow. Writing gives me the space to slow
