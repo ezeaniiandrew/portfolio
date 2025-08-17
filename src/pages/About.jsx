@@ -1,3 +1,4 @@
+import { Button } from "../components";
 import PageTransition from "../components/PageTransition";
 import { skillSets } from "../data";
 import { Hero } from "./components";
@@ -39,6 +40,14 @@ function About() {
             Experience
           </h3>
           <TimelineCurves />
+          <Button
+            text="view full resume"
+            className="capitalize h-16 text-base mx-auto mt-12 md:justify-self-center col-span-2 w-fit max-sm:w-full"
+            as={"link"}
+            href="https://drive.google.com/file/d/1CTy8TMFBXzvEHOUBVOGRnVD2etLMhBHR/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          />
         </div>
         <div className="w-full text-left mt-24 px-5 md:px-0">
           <h3 className="uppercase border-l-8 border-l-brand-secondary pl-3 font-semibold text-4xl">
