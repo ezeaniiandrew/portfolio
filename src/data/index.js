@@ -116,7 +116,7 @@ export const projects = [
     designer: "Andrew Ezeani",
     year: 2025,
     duration: "4 weeks",
-    live: "https://recordit-pied.vercel.app/",
+    liveLink: "https://recordit-pied.vercel.app/",
     github: "https://github.com/ezeaniiandrew/recordit",
     techStack: [
       "TypeScript",
