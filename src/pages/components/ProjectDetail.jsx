@@ -79,8 +79,11 @@ function ProjectDetail() {
           </Link>
         </aside>
         <div className="col-span-12">
-          <video src={selectedProject?.preview} controls></video>
-          {/* <img src={selectedProject?.preview} alt="" height={778} /> */}
+          <video
+            src={selectedProject?.preview}
+            className="w-full"
+            controls
+          ></video>
         </div>
         <div className="px-5 md:px-0 col-span-12 text-left">
           <h2 className="font-semibold text-[32px] leading-loose text-paragraph-tertiary">
