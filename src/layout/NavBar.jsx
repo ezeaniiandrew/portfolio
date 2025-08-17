@@ -26,7 +26,7 @@ function NavBar() {
   const marginInline = useTransform(scrollYProgress, [0, 0.1], ["0", "auto"]);
 
   return (
-    <div className="fixed text-white md:mt-2 md:grid md:grid-cols-12 w-full h-screen md:h-auto z-50">
+    <div className="fixed text-white md:mt-2 md:grid md:grid-cols-12 md:max-w-[1280px] w-full h-1 md:h-auto z-50">
       <div className="fixed top-2 w-[100vw] z-20 grid grid-cols-12 md:rounded-none md:hidden">
         <motion.div
           style={{
@@ -47,7 +47,7 @@ function NavBar() {
       </div>
 
       <div
-        className={`flex flex-col gap-20 items-start pt-10 px-6 md:pt-0 md:flex-row md:items-center md:justify-between md:h-20 md:col-start-2 md:col-end-12 h-full bg-black md:bg-transparent md:backdrop-blur-md md:rounded-full ${
+        className={`flex border border-paragraph-tertiary-2 h-screen flex-col gap-20 items-start pt-10 px-6 md:pt-0 md:flex-row md:items-center md:justify-between md:h-20 md:col-start-2 md:col-end-12 bg-black md:bg-transparent md:backdrop-blur-md md:rounded-full ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-500 md:transition-none md:translate-x-0`}
       >
