@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const PageTransition = ({
   children,
-  className = "col-start-1 -col-end-1 grid grid-cols-12 gap-y-20",
+  className = "col-start-1 -col-end-1 grid grid-cols-12 gap-y-20 md:gap-y-40",
 }) => {
   return (
     <motion.section
