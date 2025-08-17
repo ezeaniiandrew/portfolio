@@ -1,4 +1,3 @@
-import aboutMeImage from "@/assets/dp.jpg";
 import { skillSets } from "../data";
 import { Hero } from "./components";
 import { Badge } from "@/components";
@@ -27,12 +26,10 @@ function About() {
           </div>
           <div className="mt-10 grid place-content-center">
             <img
-              src={aboutMeImage}
+              src="https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_360/dp_tas23x.jpg"
               alt="Portrait of Andrew Ezeani"
-              className="max-w-[280px] md:max-w-[350px] rounded-xl shadow-lg transition-transform duration-500 ease-out hover:scale-105 hover:rotate-1 hover:shadow-[0_12px_40px_rgba(254,178,115,0.4)]"
-              width="350"
-              height="467"
-              loading="lazy"
+              className="max-w-[280px] md:max-w-[360px] rounded-xl shadow-lg transition-transform duration-500 ease-out hover:scale-105 hover:rotate-1 hover:shadow-[0_12px_40px_rgba(254,178,115,0.4)]"
+              loading="eager"
             />
           </div>
         </div>

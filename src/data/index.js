@@ -11,21 +11,6 @@ import {
   SiFramer,
   SiVitest,
 } from "react-icons/si";
-import todoCoverImageTop from "../assets/todo-cover-top.png";
-import todoCoverImageBottom from "../assets/todo-cover-bottom.png";
-import todoMobileImageOne from "../assets/todo-mobile-1.png";
-import todoMobileImageTwo from "../assets/todo-mobile-2.png";
-import todoPreview from "../assets/todo-preview.mp4";
-import recordItCoverImageTop from "../assets/recordit-cover-top.png";
-import recordItCoverImageBottom from "../assets/recordit-cover-bottom.png";
-import recordItMobileImageOne from "../assets/recordit-mobile-1.webp";
-import recordItMobileImageTwo from "../assets/recordit-mobile-2.webp";
-import recordItPreview from "../assets/recordit-preview.mp4";
-import nyeusiCoverImageTop from "../assets/nyeusi-cover-top.png";
-import nyeusiCoverImageBottom from "../assets/nyeusi-cover-bottom.png";
-import nyeusiMobileImageOne from "../assets/nyeusi-mobile-1.webp";
-import nyeusiMobileImageTwo from "../assets/nyeusi-mobile-2.png";
-import nyeusiPreview from "../assets/nyeusi-preview.mp4";
 
 export const socialLinks = {
   developer: [
@@ -69,10 +54,16 @@ export const projects = [
     name: "Nyeusi",
     overview:
       "Nyeusi is a four-page website built for a premium furniture brand to establish their online presence. The site introduces the company, showcases completed projects with images and descriptions, and includes a contact form for inquiries. The design was provided, and my role was to bring it to life as a functional, responsive, and visually consistent website.",
-    coverImageTop: nyeusiCoverImageTop,
-    coverImageBottom: nyeusiCoverImageBottom,
-    mobileImages: [nyeusiMobileImageOne, nyeusiMobileImageTwo],
-    preview: nyeusiPreview,
+    coverImageTop:
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356661/nyeusi-cover-top_awjikk.png",
+    coverImageBottom:
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356666/nyeusi-cover-bottom_oxup0w.png",
+    mobileImages: [
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_360/v1755356665/nyeusi-mobile-1_lzwalk.png",
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_360/v1755356665/nyeusi-mobile-2_pjaawm.png",
+    ],
+    preview:
+      "https://res.cloudinary.com/ezmedia/video/upload/f_auto,q_auto,w_auto/v1755356677/nyeusi-preview_pbd9dg.mp4",
     designer: "Provided by client",
     duration: "2 weeks",
     year: 2024,
@@ -112,10 +103,16 @@ export const projects = [
     name: "RecordIt",
     overview:
       "RecordIt is a modern, browser-based screen recording tool built with Next.js. It provides users with a full video recording, editing, and conversion workflow—all in the browser. With an intuitive interface and no installation needed, it offers screen capture with optional webcam overlay, timeline-based trimming, format conversion, and local file management without relying on external servers.",
-    coverImageTop: recordItCoverImageTop,
-    coverImageBottom: recordItCoverImageBottom,
-    mobileImages: [recordItMobileImageOne, recordItMobileImageTwo],
-    preview: recordItPreview,
+    coverImageTop:
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356684/recordit-cover-top_xktydn.png",
+    coverImageBottom:
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356684/recordit-cover-bottom_pneqrs.png",
+    mobileImages: [
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356684/recordit-mobile-1_uwyijj.png",
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356684/recordit-mobile-2_hbroc7.png",
+    ],
+    preview:
+      "https://res.cloudinary.com/ezmedia/video/upload/v1755356683/recordit-preview_z4ik94.mp4",
     designer: "Andrew Ezeani",
     year: 2025,
     duration: "4 weeks",
@@ -163,10 +160,16 @@ export const projects = [
     name: "Task App",
     overview:
       "Task App is a simple and responsive to-do list application built to help users efficiently manage their daily tasks. The app allows users to add, edit, complete, and delete tasks with a clean and intuitive user interface. It uses local storage to persist data between sessions, ensuring that user tasks are not lost on page refresh. The project focuses on a minimal, distraction-free layout with smooth interactions and accessibility in mind.",
-    coverImageTop: todoCoverImageTop,
-    coverImageBottom: todoCoverImageBottom,
-    mobileImages: [todoMobileImageOne, todoMobileImageTwo],
-    preview: todoPreview,
+    coverImageTop:
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356683/todo-cover-top_n2vnhm.png",
+    coverImageBottom:
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356678/todo-cover-bottom_gk1gr5.png",
+    mobileImages: [
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356683/todo-mobile-1_glk9ic.png",
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356684/todo-mobile-2_r8ggjd.png",
+    ],
+    preview:
+      "https://res.cloudinary.com/ezmedia/video/upload/f_auto,q_auto,w_auto/v1755356686/todo-preview_kkybcv.mp4",
     challenges: {
       intro:
         "The main challenge in building Task App was making it accessible to keyboard users and screen readers while still maintaining a clean, interactive UI. Below are the three key accessibility hurdles I encountered and how I overcame them:",
