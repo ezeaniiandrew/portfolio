@@ -23,35 +23,35 @@ function AboutMe() {
         <div className="col-span-2 md:col-start-2 md:-col-end-1 text-left flex flex-col gap-5 justify-between">
           <h2 className="uppercase text-3xl font-semibold">about me</h2>
           <RiCheckboxBlankCircleFill width={8} height={8} color="#707070" />
-          <p>I am Andrew Ezeani.</p>
+          <p>Hi, I am Andrew Ezeani.</p>
           <RiCheckboxBlankCircleFill width={8} height={8} color="#707070" />
           <p>
             A frontend engineer with 3+ years of experience building responsive,
-            user-focused web interfaces.
+            user-focused web applications.
           </p>
           <RiCheckboxBlankCircleFill width={8} height={8} color="#707070" />
           <p>
             I help businesses bring their ideas to life through fast,
-            accessible, and maintainable front-end development. Whether
+            SEO-optimized, and maintainable web applications. Whether
             you&apos;re starting from scratch or refining an existing product, I
-            turn complex problems into smooth, scalable solutions. I work best
-            with teams that value thoughtful design, clear communication, and
-            dependable execution.
+            can help you transform your idea into a digital experience that
+            engages users, drives growth, and delivers results.
           </p>
           <RiCheckboxBlankCircleFill width={8} height={8} color="#707070" />
           <p>
-            If you&apos;re looking for a frontend engineer who&apos;s as
-            invested in your product&apos;s success as you are, I&apos;m your
-            guy — let&apos;s build something great together.
+            Beyond client projects, I&apos;ve also contributed to open-source. I
+            work well both independently and as part of a team, and I thrive in
+            environments that value thoughtful design, clear communication, and
+            dependable execution. If you&apos;re looking for a frontend engineer
+            who&apos;s as invested in your product&apos;s success as you are,
+            I&apos;m your guy — let&apos;s build something great together.
           </p>
         </div>
         <Button
-          text="view resume"
+          text="Get in touch"
           className="capitalize h-16 text-base md:justify-self-center col-span-2 max-sm:w-full"
           as={"link"}
-          href="https://drive.google.com/file/d/1CTy8TMFBXzvEHOUBVOGRnVD2etLMhBHR/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="mailto:ezeaniiandrew@example.com"
         />
       </div>
     </section>

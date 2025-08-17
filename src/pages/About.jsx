@@ -9,30 +9,50 @@ function About() {
     <PageTransition>
       <Hero
         headline="The Person Behind the code"
-        subText="I'm a frontend developer, content writer, and tech educator from Nigeria, passionate about sharing knowledge and building solutions that help businesses grow."
+        subText="I'm a frontend developer, content writer, and tech educator, passionate about sharing knowledge and building solutions that help businesses grow."
       />
       <section className="col-start-1 md:col-start-2 -col-end-1 md:col-end-12 dark:text-brand-tertiary-light flex flex-col gap-10 items-center justify-center">
-        <div className="w-full grid place-content-center">
+        <div className="w-full grid gap-y-10">
           <div className="relative z-10">
-            <p className="text-lg md:text-xl px-5 md:px-0 font-bold dark:text-white capitalize leading-tight md:leading-snug">
-              My name is{" "}
-              <span className="block text-brand-secondary">
-                Andrew Ezeani.{" "}
+            <p className="text-lg md:text-xl px-5 md:px-0 font-bold dark:text-white leading-tight md:leading-snug">
+              <span>Hi,</span> my name is
+              <span className="block text-brand-secondary capitalize">
+                Andrew Ezeani.
               </span>
             </p>
-            <p className="text-lg md:text-xl font-semibold mt-4 mx-auto max-w-2xl">
-              I am a frontend Engineer with a 3+ years of experience in creating
-              beautiful and performant web interfaces that provide exceptional
+            <p className="text-lg text-left md:text-xl font-semibold mt-4 mx-auto max-w-2xl">
+              I am a frontend Engineer with 3+ years of experience in creating
+              beautiful and performant web applications that provide exceptional
               user experiences.
             </p>
           </div>
-          <div className="mt-10 grid place-content-center">
+          <div className="grid place-content-center">
             <img
               src="https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_360/dp_tas23x.jpg"
               alt="Portrait of Andrew Ezeani"
               className="max-w-[280px] md:max-w-[360px] rounded-xl shadow-lg transition-transform duration-500 ease-out hover:scale-105 hover:rotate-1 hover:shadow-[0_12px_40px_rgba(254,178,115,0.4)]"
               loading="eager"
             />
+          </div>
+          <div className="text-left">
+            <p className="text-lg md:text-xl font-semibold mt-4 mx-auto max-w-2xl">
+              I enjoy sharing my knowledge by breaking down ideas in a way that
+              feels clear and easy to follow. Writing gives me the space to slow
+              down, gather my thoughts, and distill scattered experiences into
+              something that others can learn from.
+            </p>
+            <p className="text-lg md:text-xl font-semibold mt-4 mx-auto max-w-2xl">
+              When I’m not in front of a screen, you’ll probably find me
+              reading, playing chess, working through a Sudoku puzzle, or just
+              relaxing with something that helps me unwind. I like exploring
+              little routines and creative projects that keep life interesting
+              and remind me to stay curious.
+            </p>
+            <p className="text-lg md:text-xl font-semibold mt-4 mx-auto max-w-2xl">
+              In many ways, those small habits and interests shape how I
+              approach my work, reminding me to stay curious, thoughtful, and
+              intentional in what I create.
+            </p>
           </div>
         </div>
         <div className="w-full text-left mt-24 px-5 md:px-0">
