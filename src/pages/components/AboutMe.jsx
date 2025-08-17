@@ -8,11 +8,6 @@ function AboutMe() {
       id="about-me"
       className="col-start-1 md:col-start-2 -col-end-1 md:col-end-12 grid grid-cols-12 dark:text-brand-tertiary-light justify-center"
     >
-      {/* <blockquote className="text-sm md:text-lg col-start-1 -col-end-1 md:col-start-3 md:col-end-11 px-5 md:px-0 text-balance">
-        &quot;Building on the web isn&apos;t just about writing code; it&apos;s
-        about creating digital experiences that are beautiful, functional, and
-        accessible to everyone.&quot;
-      </blockquote> */}
       <div className="col-span-12 grid grid-cols-2 gap-y-12 px-5">
         <div className="col-span-2 md:col-start-1 md:col-end-2">
           <img src={star} alt="" />
