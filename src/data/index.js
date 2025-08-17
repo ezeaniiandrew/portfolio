@@ -59,8 +59,8 @@ export const projects = [
     coverImageBottom:
       "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356666/nyeusi-cover-bottom_oxup0w.png",
     mobileImages: [
-      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_360/v1755356665/nyeusi-mobile-1_lzwalk.png",
-      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_360/v1755356665/nyeusi-mobile-2_pjaawm.png",
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_512/v1755356665/nyeusi-mobile-1_jcmg6b.png",
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_512/v1755468826/nyeusi-mobile-2_ujzcam.png",
     ],
     preview:
       "https://res.cloudinary.com/ezmedia/video/upload/f_auto,q_auto,w_auto/v1755356677/nyeusi-preview_pbd9dg.mp4",
@@ -108,8 +108,8 @@ export const projects = [
     coverImageBottom:
       "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356684/recordit-cover-bottom_pneqrs.png",
     mobileImages: [
-      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356684/recordit-mobile-1_uwyijj.png",
-      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356684/recordit-mobile-2_hbroc7.png",
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_512/v1755470062/recordit-mobile-1_pa73me.png",
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_512/v1755470061/recordit-mobile-2_w5xr7u.png",
     ],
     preview:
       "https://res.cloudinary.com/ezmedia/video/upload/v1755356683/recordit-preview_z4ik94.mp4",
@@ -165,8 +165,8 @@ export const projects = [
     coverImageBottom:
       "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356678/todo-cover-bottom_gk1gr5.png",
     mobileImages: [
-      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356683/todo-mobile-1_glk9ic.png",
-      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356684/todo-mobile-2_r8ggjd.png",
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_512/v1755356683/todo-mobile-1_glk9ic.png",
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_512/v1755356684/todo-mobile-2_r8ggjd.png",
     ],
     preview:
       "https://res.cloudinary.com/ezmedia/video/upload/f_auto,q_auto,w_auto/v1755356686/todo-preview_kkybcv.mp4",
