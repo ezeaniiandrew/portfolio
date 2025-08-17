@@ -2,9 +2,8 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { motion } from "framer-motion";
 import { socialLinks } from "../data";
-import { useScroll, useTransform } from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -26,7 +25,7 @@ function NavBar() {
   const marginInline = useTransform(scrollYProgress, [0, 0.1], ["0", "auto"]);
 
   return (
-    <div className="fixed text-white md:mt-2 md:grid md:grid-cols-12 md:max-w-[1280px] w-full h-1 md:h-auto z-50">
+    <div className="fixed text-white md:mt-2 md:grid md:grid-cols-12 w-full h-1 md:h-auto z-50">
       <div className="fixed top-2 w-[100vw] z-20 grid grid-cols-12 md:rounded-none md:hidden">
         <motion.div
           style={{
