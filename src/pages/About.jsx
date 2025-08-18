@@ -4,7 +4,7 @@ import { skillSets } from "../data";
 import { Hero } from "./components";
 import { Badge } from "@/components";
 
-function About() {
+export function About() {
   return (
     <PageTransition>
       <Hero
@@ -28,7 +28,7 @@ function About() {
           </div>
           <div className="grid place-content-center">
             <img
-              src="https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_360/dp_tas23x.jpg"
+              src="https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_400/dp_tas23x.jpg"
               alt="Portrait of Andrew Ezeani"
               className="max-w-[280px] md:max-w-[360px] rounded-xl shadow-lg transition-transform duration-500 ease-out hover:scale-105 hover:rotate-1 hover:shadow-[0_12px_40px_rgba(254,178,115,0.4)]"
               loading="eager"
@@ -81,8 +81,6 @@ function About() {
     </PageTransition>
   );
 }
-
-export default About;
 
 function TimelineCurves() {
   return (

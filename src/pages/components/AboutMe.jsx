@@ -13,7 +13,7 @@ function AboutMe() {
           <img src={star} alt="" />
           <div className="-mt-20">
             <img
-              src="https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/dp_tas23x.jpg"
+              src="https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_400/dp_tas23x.jpg"
               alt="Portrait of Andrew Ezeani"
               className="max-w-[280px] md:max-w-[400px] rounded-xl shadow-lg transition-transform duration-500 ease-out hover:scale-105 hover:rotate-1 hover:shadow-[0_12px_40px_rgba(254,178,115,0.4)]"
               loading="eager"

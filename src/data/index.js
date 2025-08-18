@@ -14,12 +14,20 @@ import {
 
 export const socialLinks = {
   developer: [
-    { link: "github.com/ezeaniiandrew", icon: VscGithub },
-    { link: "linktr.ee/ezeaniiandrew", icon: SiLinktree },
+    { medium: "Github", link: "github.com/ezeaniiandrew", icon: VscGithub },
+    {
+      medium: "LinkedIn",
+      link: "www.linkedin.com/in/ezeani-andrew",
+      icon: FaLinkedin,
+    },
+    { medium: "Linktree", link: "linktr.ee/ezeaniiandrew", icon: SiLinktree },
   ],
   designer: [
-    { link: "https://www.behance.net/arif07", icon: FaBehance },
-    { link: "www.linkedin.com/in/ezeani-andrew", icon: FaLinkedin },
+    {
+      medium: "Behance",
+      link: "https://www.behance.net/arif07",
+      icon: FaBehance,
+    },
   ],
 };
 
@@ -59,8 +67,8 @@ export const projects = [
     coverImageBottom:
       "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_auto/v1755356666/nyeusi-cover-bottom_oxup0w.png",
     mobileImages: [
-      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_512/v1755356665/nyeusi-mobile-1_jcmg6b.png",
       "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_512/v1755468826/nyeusi-mobile-2_ujzcam.png",
+      "https://res.cloudinary.com/ezmedia/image/upload/f_auto,q_auto,w_512/v1755356665/nyeusi-mobile-1_jcmg6b.png",
     ],
     preview:
       "https://res.cloudinary.com/ezmedia/video/upload/f_auto,q_auto,w_auto/v1755356677/nyeusi-preview_pbd9dg.mp4",

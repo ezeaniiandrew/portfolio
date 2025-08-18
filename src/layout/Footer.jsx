@@ -15,7 +15,7 @@ function Footer() {
           href="mailto:ezeaniiandrew@example.com"
         />
       </section>
-      <section className="max-sm:px-5 mt-20 flex flex-col md:flex-row max-sm:gap-4 md:items-center justify-between">
+      <section className="max-sm:px-5 mt-20 flex flex-col max-sm:gap-4 md:items-center md:gap-1">
         <p>
           Designed by{" "}
           <a
@@ -31,9 +31,14 @@ function Footer() {
               <a
                 href={`https://${profile.link}`}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
+                aria-label={`Visit Khandaker Ariful Haque ${profile.medium} profile`}
+                className="flex items-center"
               >
-                <profile.icon />
+                <profile.icon aria-hidden="true" />
+                <span className="sr-only">
+                  Visit Khandaker Ariful Haque {profile.medium} profile
+                </span>
               </a>
             </li>
           ))}

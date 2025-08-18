@@ -1,7 +1,7 @@
 import PageTransition from "../components/PageTransition";
 import { Hero } from "./components";
 
-function Contact() {
+export function Contact() {
   return (
     <PageTransition>
       <Hero
@@ -13,5 +13,3 @@ function Contact() {
     </PageTransition>
   );
 }
-
-export default Contact;

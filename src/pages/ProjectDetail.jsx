@@ -2,15 +2,15 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
-import { getSkillsByNames, projects } from "../../data";
+import { getSkillsByNames, projects } from "../data";
 import { CodeBlock, dracula } from "react-code-blocks";
-import Badge from "../../components/Badge";
+import Badge from "../components/Badge";
 import { motion } from "framer-motion";
-import PageTransition from "../../components/PageTransition";
+import PageTransition from "../components/PageTransition";
 import { AnimatePresence } from "framer-motion";
 import { useLocation } from "react-router-dom";
 
-function ProjectDetail() {
+export function ProjectDetail() {
   const { projectName } = useParams();
   const { state } = useLocation();
   const direction = state?.direction || "next";
@@ -38,7 +38,11 @@ function ProjectDetail() {
             {selectedProject.name}
           </h1>
           <div className="row-start-2 col-span-12">
-            <img src={selectedProject?.coverImageTop} alt="" height={778} />
+            <img
+              src={selectedProject?.coverImageTop}
+              alt={`Screenshot of ${selectedProject.name} homepage hero section`}
+              height={778}
+            />
           </div>
           <div className="px-5 md:px-0 md:row-start-3 col-start-1 -col-end-1 md:col-end-9 text-left">
             <h2 className="font-semibold text-[32px] leading-loose text-paragraph-tertiary">
@@ -49,9 +53,9 @@ function ProjectDetail() {
             <h2 className="mt-8 font-semibold text-[32px] leading-loose text-paragraph-tertiary">
               Tech Stack
             </h2>
-            <div className="flex flex-wrap gap-2">
+            <ul className="flex flex-wrap gap-2">
               <Badge badges={getSkillsByNames(selectedProject?.techStack)} />
-            </div>
+            </ul>
           </div>
           <aside className="text-left md:row-start-3 col-start-1 -col-end-1 grid gap-y-4 md:col-start-10 md:col-end-13 bg-brand-secondary rounded-[10px] p-5 text-paragraph-black grid-cols-6 md:grid-cols-1 md:gap-y-6 gap-x-2">
             <div className="col-start-1 col-end-3 md:col-span-full">
@@ -75,7 +79,8 @@ function ProjectDetail() {
             <Link
               to={selectedProject?.liveLink}
               target="_blank"
-              className="col-span-3 md:col-span-full outline p-2 capitalize font-medium outline-1 rounded-lg flex items-center justify-center gap-2 "
+              className="col-span-3 md:col-span-full p-2 capitalize border border-black font-medium outline-1 rounded-lg flex items-center justify-center gap-2"
+              aria-label={`Visit the ${selectedProject?.name} website (opens in a new tab)`}
             >
               <span>live site</span>
               <span>
@@ -85,7 +90,8 @@ function ProjectDetail() {
             <Link
               to={selectedProject?.githubRepo}
               target="_blank"
-              className="col-span-3 -col-end-1 md:col-span-full outline p-2 capitalize font-medium outline-1 rounded-lg flex items-center justify-center gap-2 "
+              className="col-span-3 -col-end-1 md:col-span-full p-2 capitalize border border-black font-medium outline-1 rounded-lg flex items-center justify-center gap-2 "
+              aria-label={`Visit the ${selectedProject?.name} project Github repository (opens in a new tab)`}
             >
               <span>Github</span>
               <span>
@@ -94,11 +100,20 @@ function ProjectDetail() {
             </Link>
           </aside>
           <div className="col-span-12">
+            <span className="sr-only">
+              Video preview of the {selectedProject.name} project
+            </span>
             <video
               src={selectedProject?.preview}
               className="w-full"
               controls
-            ></video>
+              aria-label={`Video preview of the ${selectedProject.name} project`}
+            >
+              <p>
+                Your browser does not support video playback. Here’s a{" "}
+                <a href={selectedProject?.preview}>link to the video</a>.
+              </p>
+            </video>
           </div>
           <div className="px-5 md:px-0 col-span-12 text-left">
             <h2 className="font-semibold text-[32px] leading-loose text-paragraph-tertiary">
@@ -129,25 +144,27 @@ function ProjectDetail() {
             </h2>
             <p className="mb-4">{selectedProject?.result}</p>
           </div>
-          <div className="col-start-1 col-end-7">
-            <img
-              src={selectedProject?.mobileImages[0] || ""}
-              alt="image here"
-              height={560}
-            />
-          </div>
-          <div className="col-start-7 col-end-13">
-            <img
-              src={selectedProject?.mobileImages[1] || ""}
-              alt="image here"
-              height={560}
-            />
-          </div>
-          <div className="col-span-12">
-            <img
-              src={selectedProject?.coverImageBottom || ""}
-              alt="image here"
-            />
+          <div className="col-span-12 grid grid-cols-12 gap-4">
+            <div className="col-start-1 col-end-7">
+              <img
+                src={selectedProject?.mobileImages[0] || ""}
+                alt={`Mobile view Screenshot of ${selectedProject.name} homepage hero section.`}
+                height={560}
+              />
+            </div>
+            <div className="col-start-7 col-end-13">
+              <img
+                src={selectedProject?.mobileImages[1] || ""}
+                alt={`Mobile view screenshot of a page from the ${selectedProject.name} project.`}
+                height={560}
+              />
+            </div>
+            <div className="col-span-12">
+              <img
+                src={selectedProject?.coverImageBottom || ""}
+                alt={`Screenshot of a page from the ${selectedProject.name} project.`}
+              />
+            </div>
           </div>
         </motion.div>
 
@@ -183,5 +200,3 @@ function ProjectDetail() {
     </PageTransition>
   );
 }
-
-export default ProjectDetail;

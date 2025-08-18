@@ -1,29 +1,43 @@
 import { createBrowserRouter } from "react-router-dom";
-import { About, Contact, Landing, NotFound } from "../pages";
 import Layout from "../layout";
-import { ProjectDetail } from "../pages/components";
+import Landing from "../pages/Landing";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
     children: [
-      { element: <Landing />, index: true },
+      {
+        index: true,
+        element: <Landing />,
+      },
       {
         path: "/projects/:projectName",
-        element: <ProjectDetail />,
+        lazy: async () => {
+          const { ProjectDetail } = await import("../pages/ProjectDetail");
+          return { Component: ProjectDetail };
+        },
       },
       {
         path: "contact",
-        element: <Contact />,
+        lazy: async () => {
+          const { Contact } = await import("../pages/Contact");
+          return { Component: Contact };
+        },
       },
       {
         path: "about",
-        element: <About />,
+        lazy: async () => {
+          const { About } = await import("../pages/About");
+          return { Component: About };
+        },
       },
       {
         path: "*",
-        element: <NotFound />,
+        lazy: async () => {
+          const { NotFound } = await import("../pages/NotFound");
+          return { Component: NotFound };
+        },
       },
     ],
   },
