@@ -64,7 +64,7 @@ export function About() {
             text="view resume"
             className="capitalize h-16 text-base mx-auto mt-12 md:justify-self-center col-span-2 w-fit max-sm:w-full"
             as={"link"}
-            href="https://drive.google.com/file/d/1CTy8TMFBXzvEHOUBVOGRnVD2etLMhBHR/view?usp=sharing"
+            href="https://drive.google.com/file/d/1QL77ceoAEmAJOOIW-nufHARvReKGJ8dA/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           />
