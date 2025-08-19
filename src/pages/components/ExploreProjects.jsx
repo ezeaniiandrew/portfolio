@@ -26,7 +26,7 @@ function ExploreProjects() {
                 className="overflow-hidden bg-brand-tertiary-light"
               >
                 <img
-                  src={project.coverImageTop}
+                  src={project.thumbnail}
                   alt={project.name}
                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
