@@ -103,7 +103,7 @@ function TimelineCurves() {
           {/* <div className="  "> */}
           <div className="absolute top-[40%] md:top-[41%] min-[840px]:top-[42.5%] lg:top-[42.5%] py-2 left-[2%] min-[840px]:left-[9%] lg:left-[8%] xl:left-[16%] border-r-2 border-r-[#EE9008] pr-3 md:pr-8 text-right">
             <p className="md:text-sm font-semibold text-gray-600 text-[10px]">
-              6 months
+              1 year
             </p>
             <p className="text-sm md:text-2xl lg:text-3xl font-bold">
               BlueX Ltd.
