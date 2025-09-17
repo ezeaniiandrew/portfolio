@@ -25,7 +25,7 @@ function NavBar() {
   const marginInline = useTransform(scrollYProgress, [0, 0.1], ["0", "auto"]);
 
   return (
-    <div className="fixed text-white md:mt-2 md:grid md:grid-cols-12 w-full h-1 md:h-auto z-50">
+    <div className="fixed text-white md:mt-2 md:grid md:grid-cols-12 w-full h-1 md:h-auto z-50 max-w-[1440px]">
       <div className="fixed top-2 w-[100vw] z-20 grid grid-cols-12 md:rounded-none md:hidden">
         <motion.div
           style={{
